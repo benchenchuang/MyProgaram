@@ -1,0 +1,4 @@
+/* components/map/index.wxss */
+.map{
+  padding: 0 30rpx;
+}
