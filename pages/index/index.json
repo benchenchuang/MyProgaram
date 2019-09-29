@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "show-map":"../../components/map/index"
+    "show-map":"../../components/map/index",
+    "show-banner":"../../components/banner/index"
   }
 }

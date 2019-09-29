@@ -6,7 +6,17 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    banners:[
+      {
+        title:'1',
+        path:'https://res.mekeai.com/002df798-3501-4a37-976d-23f33f8d3bbb'
+      },
+      {
+        title: '2',
+        path: 'https://res.mekeai.com/00441b0a-fb82-4710-9902-b1237262009c'
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
