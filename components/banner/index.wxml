@@ -1,6 +1,6 @@
 <!--components/banner/index.wxml-->
 <view class="page_banner swiper">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{banners}}" wx:key="index">
       <swiper-item>
         <view class="swiper-item">

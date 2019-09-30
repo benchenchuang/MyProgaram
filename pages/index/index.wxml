@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <show-map lat="31.09" log="119.95" iconPath="http://img0.imgtn.bdimg.com/it/u=1260305692,2555177882&fm=26&gp=0.jpg"/>
 <show-banner banners="{{banners}}"/>
+<header title="在线调查" subTitle="online title"/>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>

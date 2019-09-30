@@ -1,0 +1,5 @@
+<!--components/head/index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="subTitle">{{subTitle}}</view>
+</view>

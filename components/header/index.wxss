@@ -1,0 +1,32 @@
+/* components/head/index.wxss */
+.header{
+  margin: 20rpx 0;
+  text-align: center;
+}
+.title{
+  position: relative;
+  font-size: 28rpx;
+  color: #666;
+}
+.title::before,
+.title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30rpx;
+  height: 4rpx;
+  background: #666;
+}
+.title::before{
+  right: 50%;
+  transform: translateX(-240%);
+}
+.title::after{
+  left: 50%;
+  transform: translateX(240%);
+}
+.subTitle{
+  margin-top: 14rpx;
+  font-size: 22rpx;
+  color: #999;
+}
