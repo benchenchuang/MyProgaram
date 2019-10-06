@@ -1,6 +1,11 @@
 <!--components/banner/index.wxml-->
+<<<<<<< HEAD
 <view class="page_banner swiper" wx:if="{{banners.length}}">
   <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff" indicator-color="#bcc2c6" autoplay="{{autoplay}}" interval="{{interval}}" style="height:{{height}}rpx" duration="{{duration}}">
+=======
+<view class="page_banner swiper">
+  <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+>>>>>>> d2bacc80894de017cf3fd7518671824b73382488
     <block wx:for="{{banners}}" wx:key="index">
       <swiper-item>
         <navigator wx:if="{{item.type==1}}" url="/pages/newsDetail/index?id={{item.article_id}}" class="swiper-item">

@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <show-banner banners="{{banners}}"/>
+<<<<<<< HEAD
 <view class="home_tabs flex">
   <block wx:for="{{tabs}}" wx:key="index">
     <navigator wx:if="{{item.isTab}}" open-type="switchTab" url="{{item.url}}" class="tab_item" hover-class="none">
@@ -15,6 +16,19 @@
   <view class="block_head">
     <view class="title">集 团 简 介</view>
     <view class="desc">Group introduction</view>
+=======
+<header title="在线调查" subTitle="online title"/>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+>>>>>>> d2bacc80894de017cf3fd7518671824b73382488
   </view>
   <navigator url="../home_block/group/index" hover-class="none">
     <image class="group_content" src="{{globalUrl}}/group_content.jpg" mode="widthFix"></image>
