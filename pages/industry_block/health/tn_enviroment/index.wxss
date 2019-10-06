@@ -1,0 +1,7 @@
+/* pages/industry_block/health/tn_enviroment/index.wxss */
+.content{
+  width: 100%;
+}
+.content image{
+  width: 100%;
+}

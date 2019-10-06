@@ -1,0 +1,17 @@
+<!--pages/industry_block/travel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="江苏晋陵建设发展有限公司" subTitle="company profile"/>
+<view class="container">
+江苏晋陵建设发展有限公司是常州市晋陵投资集团有限公司全资子公司，注册资本2亿元，公司目前具有建筑工程施工总承包贰级、建筑装修装饰工程专业承包贰级、市政公用工程施工总承包叁级、房地产开发贰级等资质，拥有专业技术人员 98人，执业资格人员 53人。公司坚持以“民生幸福产业建设者”为定位，从事施工总承包、政府投资项目的代建、项目管理、房地产开发、建设工程咨询和技术服务等业务，积极探索发展新思路，拓宽经营领域，打造核心竞争力，坚持科学规范的管理思路、自主创新的经营方式、合作共赢的商业模式，夯实幸福产业发展基础，建造产业新城，建设幸福城市。
+  <view class="sub_content">
+    <view>公司地址：常州市新北区晋陵北路15号</view>
+    <view>联系方式：0519-86927715（办公室）85267716（事业部）</view>
+  </view>
+  <view class="show_code">
+    <view class="code_title">微信公众号</view>
+    <view class="code_sub_title">微信搜索：晋陵文锦</view>
+    <image class="code" bindtap="preview" data-url="{{globalUrl}}/industry/wj_code.jpg" src="{{globalUrl}}/industry/wj_code.jpg" mode="widthFix"></image>
+  </view>
+</view>
+<section sections="{{sections}}"/>
+<overview news="{{news}}"/>

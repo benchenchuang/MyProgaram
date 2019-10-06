@@ -2,10 +2,7 @@
 .page_banner{
   width: 100%;
 }
-.page_banner swiper,
-.page_banner swiper-item{
-  height: 280rpx;
-}
 .swiper-item image{
   width: 100%;
+  vertical-align: top;
 }

@@ -1,0 +1,10 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="西门子全数字乳腺X线摄影系统" subTitle="主要设备介绍"/>
+<view class="container">
+Mammomat Fusion西门子全数字乳腺X线摄影系统
+<view>更新技术 更优图像</view>
+<view>采用目前数字乳腺中先进的MaxFil技术高效能非晶硅（aSi）平板探测器，加上一体化的工作站和先进的图像处理软件OpView2，更高刷新速度，更快成像，展现更优图像。</view>
+<view>更低剂量，更多安全</view>
+<view>针对亚洲妇女致密乳腺的摄影质量要求，选用低剂量钨靶乳腺球管，配以先进的全视野AEC 自动曝光探测技术和专利的Opdose零点计量优化技术，通过大量数据库的分析计算，对于不同类型乳腺拍摄给出最优化的拍摄剂量，在获取优异图像质量的同时，有效降低辐射剂量最高达60%，给客户提供更高的辐射安全保障。另有Opcomp技术，在保证图像质量前提下，自动选择最佳压力值，从而达到图像质量与客户舒适度完美平衡。更低辐射剂量，更多安心。</view>
+</view>

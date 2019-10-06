@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "物业项目",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "section": "../../../../components/section/index"
+  }
+}

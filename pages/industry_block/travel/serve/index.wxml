@@ -1,0 +1,3 @@
+<!--pages/industry_block/travel/serve/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<section sections="{{sections}}"/>

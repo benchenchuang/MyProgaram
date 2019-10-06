@@ -1,0 +1,3 @@
+<!--pages/industry_block/health/tn_equipment/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<section sections="{{sections}}"/>

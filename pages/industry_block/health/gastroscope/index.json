@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "西门子全数字乳腺X线摄影系统",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

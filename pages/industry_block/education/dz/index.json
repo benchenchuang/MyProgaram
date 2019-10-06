@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "常州奥体雕庄街道文体活动中心",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

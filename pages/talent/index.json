@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "人才发展",
+  "usingComponents": {
+    "show-banner": "../../components/banner/index",
+    "header": "../../components/header/index",
+    "news-item": "../../components/news/index",
+    "job-item": "../../components/job/index"
+  }
+} 

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "其他产业导航",
+  "usingComponents": {
+    "show-map": "../../../components/map/index",
+    "header": "../../../components/header/index"
+  }
+}

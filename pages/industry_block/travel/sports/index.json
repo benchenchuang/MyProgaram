@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "常州体育运动服务综合楼",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

@@ -1,0 +1,40 @@
+<!--pages/talent/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<view class="search_box">
+  <input type="text" confirm-type="search" bindconfirm="searchKey" placeholder="搜索职位"></input>
+</view>
+<view class="jobs_tabs">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view class="job_tab {{params.part==item.value?'on':''}}" data-part="{{item.value}}" bindtap="changeJobs">{{item.name}}</view>
+  </block>
+  <image class="tab_bg" src="../../images/talent_header.png" mode="widthFix"></image>
+</view>
+<job-item jobs="{{jobs}}"/>
+<view class="btn_area" wx:if="{{jobs.length}}">
+  <navigator class="more_btn" url="./jobs/index?type={{params.part}}" hover-class="none">点击查看更多招聘信息</navigator>
+</view>
+<view wx:else>
+  <view class="no_data">暂无内容</view>
+</view>
+
+<view class="urgent">
+  <view class="urgent_header">
+    <view class="urgent_title">
+      <view class="title">晋陵急聘</view>
+      <navigator wx:if="{{urgentJobs.length}}" class="more" url="./jobs/index?is_urgent=1" hover-class="none">更多 ></navigator>
+    </view>
+    <image class="urgent_bg" src="../../images/talent_title.png" mode="widthFix"></image>
+  </view>
+  <job-item jobs="{{urgentJobs}}"/>
+</view>
+
+<view class="urgent">
+  <view class="urgent_header">
+    <view class="urgent_title">
+      <view class="title">人才与发展</view>
+      <!-- <navigator class="more" hover-class="none">更多 ></navigator> -->
+    </view>
+    <image class="urgent_bg" src="../../images/talent_title.png" mode="widthFix"></image>
+  </view>
+  <news-item news="{{news}}"/>
+</view>

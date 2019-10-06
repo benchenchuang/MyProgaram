@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "天宁晋陵主要设备",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "section": "../../../../components/section/index"
+  }
+}

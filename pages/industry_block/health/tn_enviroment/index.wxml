@@ -1,0 +1,6 @@
+<!--pages/industry_block/health/tn_enviroment/index.wxml-->
+<view class="content">
+  <block wx:for="{{sections}}" wx:key="index">
+    <image src="{{item.pic}}" mode="widthFix"></image>
+  </block>
+</view>

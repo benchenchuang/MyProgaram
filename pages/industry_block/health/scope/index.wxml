@@ -1,0 +1,5 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="西门子SOMATOM Scope" subTitle="主要设备介绍"/>
+<view class="container">SOMATOM Scope具备完整的低剂量系统，它能提供在满足临床诊断要求的前提下获得最低的剂量照射。CARE Dose4D智能靶向低剂量技术是全自动基于器官的实时剂量调节，最多可以降低68%的计量；Scope智能扫描系统自动的扫描范围设定能够精确的覆盖需要扫描的地方，避免多余的扫描范围，更好的保护客人避免过量辐射。SOMATOM Scope采用西门子卓越的显微整板探测器，纳米微焦球管一偶记飞焦点技术来达到优质的图像质量，配以西门子专利的SureView全景无失真技术，SOMATOM  Scope可以同时做到高质量图像与高速度扫描。
+</view>

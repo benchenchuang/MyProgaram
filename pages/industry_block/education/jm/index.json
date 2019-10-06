@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "常州奥体健身俱乐部（金梅馆）",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

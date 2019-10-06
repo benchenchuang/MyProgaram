@@ -1,0 +1,2 @@
+<!--pages/home_block/landscape/index.wxml-->
+<image class="show_image" mode="widthFix" src="{{globalUrl}}/landscape.png"/>

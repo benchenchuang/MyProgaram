@@ -1,0 +1,71 @@
+<!--pages/talent/job/index.wxml-->
+<import src="../../../wxParse/wxParse.wxml"/>
+<view class="wrap">
+  <view class="header">职位名称：{{info.title}}</view>
+  <view class="header">工作地点：<text>{{info.work_place}}</text></view>
+  <view class="header">学历要求：<text>{{info.education}}</text></view>
+  <view class="header">工作经验：<text>{{info.experience}}</text></view>
+  <view class="header">职位福利：
+    <block wx:for="{{info.welfares}}" wx:key="index">
+      <text>{{item.welfare}}</text>
+    </block>
+  </view>
+  <view class="title">具体内容：
+    <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
+  </view>
+</view>
+<header title="简历投递" subTitle="Resume submitted"/>
+<view class="apply_wrap">
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>姓名</view>
+    <view class="item flex_item">
+      <input type="text" value="{{apply.realname}}" data-type="realname" bindinput="changePut" placeholder="请输入姓名"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>电话</view>
+    <view class="item flex_item">
+      <input type="number" value="{{apply.phone}}" data-type="phone" bindinput="changePut" placeholder="请输入电话"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>学历</view>
+    <view class="item flex_item">
+      <input type="text" value="{{apply.education}}" data-type="education" bindinput="changePut" placeholder="请输入学历"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>年龄</view>
+    <view class="item flex_item">
+      <input type="number" value="{{apply.age}}" data-type="age" bindinput="changePut" placeholder="请输入年龄"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>性别</view>
+    <view class="item flex_item">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">{{array[index]}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>工作经验</view>
+    <view class="item flex_item">
+      <input type="text" value="{{apply.experience}}" data-type="experience" bindinput="changePut" placeholder="请输入工作经验"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>简历图片</view>
+    <view class="item flex_item">
+      <view class="upload" wx:for="{{photos}}" wx:key="index">
+        <text class="del" data-index="{{index}}" bindtap="delPhoto">删除</text>
+        <image class="resume" src="{{baseUrl}}{{item}}" mode="aspectFill"></image>
+      </view>
+      <view class="upload" bindtap="pickerUpload" wx:if="{{photos.length<6}}">
+        <image class="resume" src="../../../images/icon_upload.png" mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isAuthorize}}" class="resume_btn" bindtap="submitResume">提交</view>
+  <button wx:else class="resume_btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">授权信息并提交</button>
+</view>

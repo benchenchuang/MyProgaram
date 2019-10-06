@@ -1,10 +1,10 @@
 // const baseUrl = 'https://personal-dev.mekeai.com/api';
-const baseUrl = 'https://personal.mekeai.com/api';
+const baseUrl = 'https://jljt.wannakeji.com';
 
 //获取token
-const getSessionId = () => {
-  var sessionId = wx.getStorageSync('sessionId')
-  return sessionId;
+const getToken = () => {
+  var token = wx.getStorageSync('token') || '';
+  return token;
 };
 /**
  * url:请求接口的短链接
@@ -12,14 +12,19 @@ const getSessionId = () => {
  * params:请求的参数
  */
 const httpRequest = (url, method, params) => {
+  let token = getToken()
+  if (params && token){
+    params.token = token;
+  }
   let promise = new Promise((resolve, reject) => {
     wx.request({
-      url: `${baseUrl}/${url}`,
+      url: `${baseUrl}${url}`,
       method: method,
       data: params,
+      dataType:'json',
       header: {
         'Content-Type': 'application/json',
-        'session_id': getSessionId()
+        'token': getToken()
       },
       complete: (res) => {
         if (res.statusCode == 502) {

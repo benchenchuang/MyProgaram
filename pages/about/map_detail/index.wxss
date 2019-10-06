@@ -1,0 +1,17 @@
+/* pages/about/map_detail/index.wxss */
+.map_item{
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+.show_address{
+  width: 100%;
+}
+.other_company{
+  margin: 30rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 32rpx;
+  color: #3876ff;
+  text-align: center;
+  border: 1px solid #3876ff;
+}

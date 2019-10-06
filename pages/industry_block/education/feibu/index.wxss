@@ -1,0 +1,4 @@
+/* pages/industry_block/travel/hotel/index.wxss */
+.article image{
+  width: 100%;
+}

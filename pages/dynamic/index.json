@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "晋陵动态",
+  "usingComponents": {
+    "show-banner": "../../components/banner/index",
+    "header": "../../components/header/index",
+    "news-item": "../../components/news/index"
+  }
+}

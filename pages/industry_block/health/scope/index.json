@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "西门子SOMATOM Scope",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

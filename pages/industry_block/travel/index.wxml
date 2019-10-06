@@ -1,0 +1,19 @@
+<!--pages/industry_block/travel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="江苏晋陵文化旅游发展有限公司" subTitle="company profile"/>
+<view class="container">
+江苏晋陵文化旅游发展有限公司是常州市晋陵投资集团有限公司全资子公司，注册资本3000万元，经营范围涉及历史文化街区、文化综合体、酒店、物业、影剧院、旅行社、教育培训、户外广告、招商租赁等运营服务业务。以新兴业态为载体、以跨界发展为路径，借力集团平台发展模式，构建具备专业水准的运营管理能力，推动文商旅三位一体协同发展，实现跨越提升，提振民生幸福，缔造一流文旅运营商。
+  <view class="sub_content">
+    <view>公司地址:常州市锦绣路2号(文化广场2-2号12楼)</view>
+    <view>联系方式:0519-82000155(办公室)</view>
+    <view>青果巷招商中心地址:常州市和平路和青果巷交汇处(琢初桥北侧）</view>
+    <view>全球招商热线：+86-0519-81096688</view>
+  </view>
+  <view class="show_code">
+    <view class="code_title">微信公众号</view>
+    <view class="code_sub_title">微信搜索：常州青果巷</view>
+    <image class="code" bindtap="preview" data-url="{{globalUrl}}/industry/qg_code.jpg" src="{{globalUrl}}/industry/qg_code.jpg" mode="widthFix"></image>
+  </view>
+</view>
+<section sections="{{sections}}"/>
+<overview news="{{news}}"/>

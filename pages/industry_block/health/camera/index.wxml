@@ -1,0 +1,6 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="数字化X线摄影（DR）" subTitle="主要设备介绍"/>
+<view class="container">
+CHORUS直接数字化摄影系统由意大利GMM公司制造，是一套配备了电动多功能探测器支架的高性能DR系统，仅用一套探测器系统就能够完成不同体位的客人，是当今最为全面的DR摄影结构，能够在拍摄后数秒钟内得到数字影像。
+</view>

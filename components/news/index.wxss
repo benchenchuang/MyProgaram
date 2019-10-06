@@ -1,0 +1,46 @@
+/* components/news/index.wxss */
+.news_block{
+  margin-bottom: 30rpx;
+  padding-bottom: 30rpx;
+  background: #fff;
+}
+.news{
+  display: flex;
+  display: -webkit-flex;
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.news .news_pic{
+  width: 200rpx;
+  height: 140rpx;
+}
+.news .content{
+  flex: 1;
+  -webkit-flex: 1;
+  margin-left: 20rpx;
+}
+.news .head{
+  font-size: 28rpx;
+  color: #444;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news .sub_title{
+  margin-top: 14rpx;
+  font-size: 22rpx;
+  color: #777;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news .desc{
+  margin-top: 34rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+.news .desc .watch{
+  margin-left: 10rpx;
+  float: right;
+}

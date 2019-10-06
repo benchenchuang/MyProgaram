@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "飞利浦EPIQ5全身应用超声系统",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

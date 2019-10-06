@@ -1,0 +1,39 @@
+<!--components/job/index.wxml-->
+<view class="job_wrap">
+  <block wx:for="{{jobs}}" wx:key="index">
+    <navigator wx:if="{{item.type==1}}" url="/pages/talent/job/index?id={{item.id}}" hover-class="none" class="job flex">
+      <view class="item flex_item">
+        <view class="title">{{item.title}}</view>
+        <view class="profile">
+          <text>{{item.work_place}}</text>
+          <text>{{item.education}}</text>
+          <text>{{item.experience}}</text>
+        </view>
+        <view class="label">
+          <block wx:for="{{item.welfares}}" wx:key="idx" wx:for-index="idx" wx:for-item="itemName">
+            <text>{{itemName.welfare}}</text>
+          </block>
+        </view>
+        <view class="date">{{item.createtime}}</view>
+      </view>
+      <view class="job_btn">了解详情</view>
+    </navigator>
+    <navigator wx:else url="/pages/webview/index?url={{item.url}}" hover-class="none" class="job flex">
+      <view class="item flex_item">
+        <view class="title">{{item.title}}</view>
+        <view class="profile">
+          <text>{{item.work_place}}</text>
+          <text>{{item.education}}</text>
+          <text>{{item.experience}}</text>
+        </view>
+        <view class="label">
+          <block wx:for="{{item.welfares}}" wx:key="idx" wx:for-index="idx" wx:for-item="itemName">
+            <text>{{itemName.welfare}}</text>
+          </block>
+        </view>
+        <view class="date">{{item.createtime}}</view>
+      </view>
+      <view class="job_btn">了解详情</view>
+    </navigator>
+  </block>
+</view>

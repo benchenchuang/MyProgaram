@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "职位列表",
+  "usingComponents": {
+    "job-item": "../../../components/job/index"
+  }
+}

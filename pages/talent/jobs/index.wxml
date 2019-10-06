@@ -1,0 +1,7 @@
+<!--pages/talent/jobs/index.wxml-->
+<view wx:if="{{jobs.length}}">
+  <job-item jobs="{{jobs}}"/>
+</view>
+<view wx:else>
+  <view class="no_data">暂无数据</view>
+</view>

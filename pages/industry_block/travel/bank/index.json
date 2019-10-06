@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "兴业银行",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

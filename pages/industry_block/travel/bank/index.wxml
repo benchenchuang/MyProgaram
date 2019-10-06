@@ -1,0 +1,8 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="兴业银行常州支行" subTitle="Property project"/>
+<view class="container">
+兴业银行常州支行位于常州市新北区惠国路69号山水和园4幢，与常州市政府隔街相对。2017年晋陵物业进驻，主要负责兴业银行常州支行大楼保洁、工程管理、食堂管理，以及下属9个支行网点的保洁卫生服务。
+<view>我们在明都酒店餐饮管理体系的基础上进行了优化，并带入兴业银行员工食堂管理服务中，员工餐厅得到了银行员工和客户的一致认同。</view>
+<view>现在兴业银行员工食堂已成为我们团餐业务的示范点，成为我们在团餐业务中的宣传名片。</view>
+</view>

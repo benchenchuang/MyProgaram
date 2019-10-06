@@ -1,1 +1,89 @@
 /* pages/news/index.wxss */
+.article{
+  padding: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #fff;
+}
+.article .title{
+  font-size: 34rpx;
+  color: #666;
+  font-weight: 700;
+}
+.article .time{
+  margin: 30rpx 0;
+  padding-bottom: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+  border-bottom: 1px solid #e6e6e6;
+}
+.article .content{
+  font-size: 28rpx;
+  color: #666;
+}
+.article .other{
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.other .likes{
+  float: right;
+  color: #a0222b;
+}
+.other .likes.unlike{
+  color: #333;
+  -webkit-filter: grayscale(100%); /* chrome+ */
+  filter: grayscale(100%); /* 未来浏览器 */
+  opacity: 0.5;
+}
+.likes .like{
+  margin-right: 6rpx;
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: bottom;
+}
+.comments{
+  padding: 30rpx;
+  font-size: 32rpx;
+}
+.comment_header{
+  display: inline-block;
+  color: #888;
+}
+.comment_btn{
+  float: right;
+  color: #a0222b;
+}
+.comment_box .comment{
+  margin: 40rpx 0;
+  font-size: 28rpx;
+}
+.comment .avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+}
+.comment .info{
+  margin-left: 20rpx;
+}
+.comment .info .del{
+  float: right;
+  color: #999;
+}
+.comment .nickname{
+  color: #888;
+}
+.comment .text{
+  margin-top: 14rpx;
+  color: #666;
+}
+button.comment_btn{
+  padding: 0;
+  font-size: 28rpx;
+  background: none;
+  border: none;
+  line-height: 1;
+}
+button::after{
+  border: none;
+}

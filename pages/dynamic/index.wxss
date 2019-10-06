@@ -1,0 +1,19 @@
+/* pages/dynamic/index.wxss */
+.show_pic{
+  width: 100%;
+  vertical-align: top;
+}
+.tabs{
+  width: 100%;
+  background: #fff;
+}
+.tabs .tab{
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.tabs .tab.on{
+  color: #a11f26;
+  border-bottom: 6rpx solid #a11f26;
+}

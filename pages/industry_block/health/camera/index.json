@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "数字化X线摄影（DR）",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

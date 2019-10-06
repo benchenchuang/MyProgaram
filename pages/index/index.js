@@ -3,20 +3,36 @@
 const app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    banners:[
+    globalUrl: app.globalData.globalUrl,
+    tabs:[
       {
-        title:'1',
-        path:'https://res.mekeai.com/002df798-3501-4a37-976d-23f33f8d3bbb'
+        url:'../home_block/landscape/index',
+        isTab:false,
+        pic: app.globalData.globalUrl +'home_tab01.png'
       },
       {
-        title: '2',
-        path: 'https://res.mekeai.com/00441b0a-fb82-4710-9902-b1237262009c'
+        url:'../talent/index',
+        isTab:true,
+        pic: app.globalData.globalUrl +'home_tab02.png'
+      },
+      {
+        url:'../dynamic/index',
+        isTab:true,
+        pic: app.globalData.globalUrl +'home_tab03.png'
+      },
+      {
+        url:'../home_block/no_data/index',
+        isTab:false,
+        pic: app.globalData.globalUrl +'home_tab04.png'
       }
-    ]
+    ],
+    banners:[],
+    news:[],
+    params:{
+      category:1,
+      page:1,
+      pagesize:10
+    }
   },
   //事件处理函数
   bindViewTap: function() {
@@ -24,40 +40,36 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+  //获取轮播图
+  getBanners() {
+    app.getBanners(1).then(res => {
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        banners: res
       })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
     })
+  },
+  //获取新闻列表
+  getNewsList(params){
+    let news = this.data.news;
+    app.getNewsList(params).then(res=>{
+      news = news.concat(res)
+      this.setData({
+        news
+      })
+    })
+  },
+  onLoad: function () {
+    let params = this.data.params;
+    this.getBanners();
+    this.getNewsList(params);
+  },
+  //上拉触底
+  onReachBottom(){
+    let params = this.data.params;
+    params.page++;
+    this.setData({
+      params
+    })
+    this.getNewsList(params);
   }
 })

@@ -1,0 +1,31 @@
+/* components/section/index.wxss */
+.section_wrap{
+  padding: 30rpx 15rpx;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.section{
+  position: relative;
+  width: 45%;
+  margin: 15rpx 2.5%;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.section .show{
+  width: 100%;
+  vertical-align: top;
+}
+.section .title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 46rpx;
+  line-height: 46rpx;
+  padding: 0 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+}

@@ -1,0 +1,36 @@
+/* components/overview/index.wxss */
+.views{
+  margin: 30rpx 0;
+  padding: 0 30rpx 30rpx;
+  background: #fff;
+}
+.views .title{
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 700;
+  padding: 30rpx 0 10rpx;
+}
+.news_box .news{
+  position: relative;
+  text-indent: 28rpx;
+  margin-top: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #666;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news_box .news::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 100%;
+  background: #ccc;
+}

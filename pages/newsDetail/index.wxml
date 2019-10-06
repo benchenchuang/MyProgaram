@@ -1,3 +1,46 @@
 <!--pages/news/index.wxml-->
 <import src="../../wxParse/wxParse.wxml"/>
-<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<view class="article">
+  <view class="title">{{articel.title}}</view>
+  <view class="time">{{article.public_time}}</view>
+  <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
+  <view class="other">
+    <text class="read">阅读：{{article.view_times}}</text>
+    <view style="float:right" wx:if="{{isAuthorize}}">
+      <view class="likes" wx:if="{{article.is_like}}" data-id="{{article.id}}" data-type="0">
+        <image class="like" src="../../images/icon_like.png" mode="widthFix"></image><text>{{article.likes}}</text>
+      </view>
+      <view class="likes unlike" wx:else bindtap="handleLike" data-id="{{article.id}}" data-type="1">
+        <image class="like" src="../../images/icon_like.png" mode="widthFix"></image><text>{{article.likes}}</text>
+      </view>
+    </view>
+    <view style="float:right" wx:else>
+      <button wx:if="{{article.is_like}}" open-type="getUserInfo" class="comment_btn likes" lang="zh_CN" bindgetuserinfo="onGotUserInfo" data-id="{{article.id}}" data-type="0">
+        <image class="like" src="../../images/icon_like.png" mode="widthFix"></image><text>{{article.likes}}</text>
+      </button>
+      <button wx:else open-type="getUserInfo" class="comment_btn likes unlike" lang="zh_CN" bindgetuserinfo="onGotUserInfo" data-id="{{article.id}}" data-type="1">
+        <image class="like" src="../../images/icon_like.png" mode="widthFix"></image><text>{{article.likes}}</text>
+      </button>
+    </view>
+  </view>
+</view>
+
+<view class="comments" wx:if="{{article.can_comment}}">
+  <view class="comment_header">留言列表</view>
+  <navigator wx:if="{{isAuthorize}}" url="./comment/index?id={{article.id}}&title={{article.title}}" class="comment_btn" hover-class="none">写留言</navigator>
+  <button wx:else open-type="getUserInfo" class="comment_btn" lang="zh_CN" bindgetuserinfo="onGotUserInfo">写留言</button>
+
+  <view class="comment_box">
+    <block wx:for="{{comments}}" wx:key="index">
+      <view class="comment flex">
+        <image src="{{item.user.avatar}}" mode="widthFix" class="avatar"/>
+        <view class="info flex_item">
+          <view class="nickname">{{item.user.nickname}}
+            <text class="del" wx:if="{{userId==item.user.id}}" bindtap="delComment" data-index="{{index}}" data-id="{{item.id}}">删除</text>
+          </view>
+          <view class="text">{{item.content}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

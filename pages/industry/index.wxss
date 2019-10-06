@@ -1,0 +1,18 @@
+/* pages/industry/index.wxss */
+.header,
+.header image{
+  width: 100%;
+  vertical-align: top;
+}
+.industry{
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+}
+.model{
+  width: 50%;
+}
+.model image{
+  width: 100%;
+  vertical-align: top;
+}

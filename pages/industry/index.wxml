@@ -1,0 +1,19 @@
+<!--pages/industry/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<view class="header">
+  <image  src="{{globalUrl}}/industry_header.jpg" mode="widthFix"/>
+</view>
+<view class="industry flex">
+  <navigator url="../industry_block/travel/index" hover-class="none" class="model">
+    <image src="{{globalUrl}}/industry/travel.jpg" mode="widthFix"/>
+  </navigator>
+  <navigator url="../industry_block/construction/index" hover-class="none" class="model">
+    <image src="{{globalUrl}}/industry/fund.jpg" mode="widthFix"/>
+  </navigator>
+  <navigator url="../industry_block/health/index" hover-class="none" class="model">
+    <image src="{{globalUrl}}/industry/health.jpg" mode="widthFix"/>
+  </navigator>
+  <navigator url="../industry_block/education/index" hover-class="none" class="model">
+    <image src="{{globalUrl}}/industry/education.jpg" mode="widthFix"/>
+  </navigator>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/industry_block/travel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="江苏晋陵医疗投资管理有限公司" subTitle="company profile"/>
+<view class="container">
+晋陵医疗由常州晋陵投资集团（市政府直管企业）投资建成，是一家专注于打造集健康体检、健康管理、健康咨询、运动指导和科学体测为一体的连锁健康服务机构，下设两个服务中心，分别位于常州奥体中心游泳馆Y2入口处（常州市新北区晋陵北路1号）及天宁全民健身中心五楼（常州市天宁区龙锦路720号）。
+<view>
+体检中心借助高端的医疗设备、经验丰富的医疗团队、舒适温馨的体检环境、贴心的医疗服务、先进的信息系统，为百姓的幸福生活提供健康支撑，助力常州健康城市建设。
+</view>
+  <view class="sub_content">
+    <view>晋陵医疗天宁体检中心：</view>
+    <view>常州市天宁区龙锦路720号天宁全民健身中心五楼</view>
+    <view>电话：0519-85525999  / 0519-85583587</view>
+  </view>
+  <view class="sub_content">
+    <view>晋陵医疗奥体体检中心：</view>
+    <view>常州市新北区晋陵北路一号奥体中心游泳馆Y2入口处</view>
+    <view>电话：0519-85583518 /  0519-85583587</view>
+  </view>
+  <view class="show_code">
+    <view class="code_title">微信公众号</view>
+    <view class="code_sub_title">微信搜索：常州晋陵医疗门诊部有限公司</view>
+    <image class="code" bindtap="preview" data-url="{{globalUrl}}/industry/health_code.jpg" src="{{globalUrl}}/industry/health_code.jpg" mode="widthFix"></image>
+  </view>
+</view>
+<section sections="{{sections}}"/>
+<overview news="{{news}}"/>

@@ -1,0 +1,9 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="西门子SOMATOM go" subTitle="主要设备介绍"/>
+<view class="container">
+革命性的掌上工作流，开创go.式招牌体检
+<view>SOMATOM go.是西门子打造的一款掌上CT，采用独创的table平板操作，自动检查扫描范围的完整性，造影剂分布和浓度，自动实现迭代重建、血管测量和多平面重建，使技师可以零距离陪伴客户，与客户亲密交流。并配备一体化摄像头，可以实时监控客户状态，将客户的移动带来的扫描失败完全避免，同时实现最安全关爱的扫描。
+GO精准诊断、安全体检</view>
+<view>高端的球管和探测器的使用，使得SOMATOM go.的扫描剂量时传统CT的一般，然而图像更清晰；3D防散射准直带来骨质包围结构的清晰显现；High Power 80有效增强了图像的高对比度和高信噪比；光子探测器可实现内耳等空腔器官的高清空间分辨率；SOMATOM go.在高清内耳、骨小梁（10%MTF）、腹部软组织（50MTF）时的分辨率远高于业内高端机型有利于精准诊断。提供X-care技术，实现对客户的眼睛、胸腺、甲状腺等敏感器官的关爱。</view>
+</view>

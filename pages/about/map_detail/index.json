@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "分公司导航",
+  "usingComponents": {
+    "show-map": "../../../components/map/index",
+    "header": "../../../components/header/index"
+  }
+}

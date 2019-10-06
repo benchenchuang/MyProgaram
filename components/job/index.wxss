@@ -1,0 +1,60 @@
+/* components/job/index.wxss */
+.job_wrap{
+  padding: 0 30rpx;
+  background: #fff;
+}
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex_item{
+  flex: 1;
+  -webkit-flex:1;
+}
+.job{
+  padding: 30rpx 0;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.job:last-child{
+  border-bottom: none;
+}
+.job .job_btn{
+  width: 128rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  background: #a0222b;
+  border-radius: 8rpx;
+}
+.job .title{
+  font-size: 32rpx;
+  color: #292929;
+}
+.job .profile{
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: #292929;
+}
+.job .profile text{
+  margin-right: 20rpx;
+}
+.job .label{
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: #868686;
+}
+.job .label text{
+  margin-right: 16rpx;
+  padding: 4rpx 8rpx;
+  background: #ededed;
+  border-radius: 6rpx;
+}
+.job .date{
+  margin-top: 16rpx;
+  font-size: 20rpx;
+  color: #868686;
+}

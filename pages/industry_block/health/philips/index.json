@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "磁控胶囊胃镜",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

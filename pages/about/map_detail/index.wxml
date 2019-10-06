@@ -1,0 +1,10 @@
+<!--pages/about/map_detail/index.wxml-->
+<view>
+  <block wx:for="{{navigators}}" wx:key="index">
+    <view class="map_item">
+      <header title="{{item.title}}" subTitle="{{item.english}}"/>
+      <show-map latitude="{{item.latitude}}" longitude="{{item.longitude}}" address="{{item.address}}"/>
+      <image class="show_address" src="{{item.pic}}" data-phone="{{item.telphone}}" bindtap="callPhone" mode="widthFix"></image>
+    </view>
+  </block>
+</view>

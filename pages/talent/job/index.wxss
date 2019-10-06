@@ -1,0 +1,72 @@
+/* pages/talent/job/index.wxss */
+.wrap{
+  padding: 30rpx;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.8;
+  background: #fff;
+}
+.header text{
+  margin-right: 20rpx;
+}
+.apply_wrap{
+  padding: 30rpx;
+  font-size: 26rpx;
+  color: #666;
+  background: #fff;
+}
+.apply_item{
+  line-height: 58rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.apply_item .label{
+  width: 160rpx;
+  color: #333;
+  font-weight: 700;
+}
+.apply_item .label text{
+  color: #a0222b;
+  margin-right: 6rpx;
+  vertical-align: middle;
+}
+.apply_item .item input{
+  width: 100%;
+  height: 58rpx;
+  line-height: 58rpx;
+}
+.resume_btn{
+  margin: 50rpx 0;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background: #a0222b;
+  border-radius: 8rpx;
+}
+.upload{
+  margin-right: 30rpx;
+  display: inline-block;
+  position: relative;
+  width: 140rpx;
+  height: 140rpx;
+  vertical-align: top;
+  overflow: hidden;
+}
+.upload .resume{
+  width: 100%;
+  height: 100%;
+}
+.upload .del{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18rpx;
+  color: #fff;
+  line-height: 1;
+  padding: 6rpx 8rpx;
+  background: #a0222b;
+}

@@ -1,0 +1,7 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="常州体育运动服务综合楼" subTitle="Property project"/>
+<view class="container">
+常州体育运动综合服务楼位于常州市新北区龙锦路1259-1号，紧邻常州奥林匹克运动中心，交通便利。项目总建筑面积约49,000平方米，地上22层及地下2层。
+<view>晋陵物业自1015年开始接管项目，提供秩序、环境绿化、工程维修、前台客服及会议服务等物业服务，获得了2016年“新北区优秀管理大厦”，2016年“新北区十佳非住宅项目物业服务企业”，2017年度“常州市物业管理优秀示范公共物业”等荣誉。</view>
+</view>

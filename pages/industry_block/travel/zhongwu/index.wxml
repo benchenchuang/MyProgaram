@@ -1,0 +1,34 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="中吴宾馆" subTitle="Property project"/>
+<view class="container">
+中吴宾馆位于常州市钟楼区皇粮浜湿地公园北侧，城市中的天然氧吧，景致优美，生态宜人。宾馆交通便利，紧邻外环高架，高铁站及沪宁城际站约 30分钟车程，驱车前往常州奔牛国际机场约50分钟。
+<view>中吴宾馆一期，拥有豪华客房87间，10个多功能厅，中餐厅9个包间及豪华电影院、国际标准的游泳池、网球场等齐全的设施设备。东第园布局严谨，主次分明又富于变化，园内有园，景外有景，精巧幽深之至。 </view>
+<view>一期6栋楼宇分别为：</view>
+<view class="article">
+  <view class="title">二号楼-芳晖苑 （文体楼）</view>
+  <image src="{{globalUrl}}/industry/banner_zw_02.jpg" mode="widthFix"></image>
+</view>
+<view class="article">
+  <view class="title">五号楼-青枫楼</view>
+  <image src="{{globalUrl}}/industry/banner_zw_03.jpg" mode="widthFix"></image>
+</view>
+<view class="article">
+  <view class="title">六号楼-天香楼</view>
+  <image src="{{globalUrl}}/industry/banner_zw_04.jpg" mode="widthFix"></image>
+</view>
+<view class="article">
+  <view class="title">七号楼-东第园</view>
+  <image src="{{globalUrl}}/industry/banner_zw_05.jpg" mode="widthFix"></image>
+</view>
+<view class="article">
+  <view class="title">八号楼-芳菲苑</view>
+  <image src="{{globalUrl}}/industry/banner_zw_06.jpg" mode="widthFix"></image>
+</view>
+<view class="article">
+  <view class="title">九号楼-紫薇楼 </view>
+  <image src="{{globalUrl}}/industry/banner_zw_07.jpg" mode="widthFix"></image>
+</view>
+<view>中吴宾馆二期玉兰苑，拥有豪华客房310间，并且拥有2个总面积达4000平方米同时可容纳200桌宾客就餐的大宴会厅，还包括14个多功能厅，18个风格迥异的中餐厅包厢和1个零点大厅，1个全日制西餐厅，1个日餐厅，1个酒吧，1个行政酒廊和1个大堂吧，同时还拥有常州市场上独一无二的儿童乐园，可满足孩子们足不出户即可游玩的需求。 宾馆二期可满足家庭出游，各类公司团建和大型会议用餐等一站式的体验。 </view>
+</view>
+

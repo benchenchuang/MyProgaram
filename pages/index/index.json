@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "show-map":"../../components/map/index",
-    "show-banner":"../../components/banner/index"
+    "show-banner":"../../components/banner/index",
+    "news-item":"../../components/news/index"
   }
 }

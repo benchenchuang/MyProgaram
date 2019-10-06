@@ -1,0 +1,5 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="飞利浦EPIQ5全身应用超声系统" subTitle="主要设备介绍"/>
+<view class="container">飞利浦专有的PureWave纯净波单晶体探头技术可以提高图像穿透力。PureWave纯净波单晶体神效能转换的有效性超过常规材料的85%，提高声束穿透力的同时，也获取了更高的图像分辨率。专有的nSIGHT成像平台在整个场深度内构建近乎完美的发射波束，实现了无与伦比的性能水平。全新MicroCPA功能，可以对低速的微小血管进行显示，提升评估器官和占位内的血流灌注能力，提高诊断准确性。实时iSCAN（AutoSCAN）自动持续优化图像增益及TGC，以保证拥有最佳的2D，3D及4D图像。EPIQ配置21”大宽屏显示器，拥有4个探头接口，并配有照明灯，诊断切换更便利。EQIP噪声监测结果显示，EPIQ运行时的噪声为37-41dB，与图书馆的噪声水平一样。
+</view>

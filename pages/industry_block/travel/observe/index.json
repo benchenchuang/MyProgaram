@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "常州市监察委",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

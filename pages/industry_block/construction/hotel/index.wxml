@@ -1,0 +1,7 @@
+<!--pages/industry_block/construction/nursing/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="中吴宾馆" subTitle="Development and construction"/>
+<view class="container">
+中吴宾馆坐落于常州市钟楼区皇粮浜湿地公园北侧，外环高架以东、中吴大道以南。项目用地为223377㎡，总建筑面积128316.55㎡,总投资约28.7亿元，是一家集餐饮、住宿、会议、文化康体、度假为一体的园林式酒店。建筑按照江南园中园、毗陵文化林的设计理念整体构建，采用中轴对称，结合几进空间、四方中庭、外方院子形成江南特色建筑群，共有405间客房、2个5000平方米宴会厅、25个总面积达3000平米的大小功能齐全的会议室。
+<view>该项目实施过程市住建局组织全市装饰装修工程观摩交流会，并在2018年建筑市场综合大检查活动中被评为综合先进。</view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="常州市监察委" subTitle="Property project"/>
+<view class="container">
+常州市监察委办公楼坐落在常州市竹林北路18号，由2幢综合楼组成，占地面积8650平方米，建筑面积20000平方米。2019年4月29日，常州市监察委举行了大楼挂牌仪式。
+<view>晋陵物业于2018年12月进场管理，负责安全、环境卫生、会议服务及工程管理等物业服务。</view>
+</view>

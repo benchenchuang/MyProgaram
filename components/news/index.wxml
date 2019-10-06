@@ -1,0 +1,29 @@
+<!--components/news/index.wxml-->
+<view class="news_block">
+  <block wx:for="{{news}}" wx:key="index">
+    <navigator wx:if="{{item.type==1}}" url="/pages/newsDetail/index?id={{item.id}}" hover-class="none" class="news">
+      <image class="news_pic" src="{{baseUrl}}{{item.images}}"/>
+      <view class="content">
+        <view class="head">{{item.title}}</view>
+        <view class="sub_title">{{item.abstract}}</view>
+        <view class="desc">
+          <text class="date">{{item.public_time}}</text>
+          <text class="watch">点赞：{{item.likes}}</text>
+          <text class="watch">阅读：{{item.view_times}}</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator wx:else url="/pages/webview/index?url={{item.url}}" hover-class="none" class="news">
+      <image class="news_pic" src="{{baseUrl}}{{item.images.split(',')[0]}}"/>
+      <view class="content">
+        <view class="head">{{item.title}}</view>
+        <view class="sub_title">{{item.abstract}}</view>
+        <view class="desc">
+          <text class="date">{{item.public_time}}</text>
+          <text class="watch">点赞：{{item.likes}}</text>
+          <text class="watch">阅读：{{item.view_times}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

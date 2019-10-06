@@ -1,0 +1,11 @@
+<!--components/overview/index.wxml-->
+<view class="views">
+  <view class="title">市场概览</view>
+  <view class="news_box">
+    <block wx:for="{{news}}" wx:key="index">
+      <navigator url="/pages/newsDetail/index?id={{item.id}}" hover-class="none" class="news">
+        {{item.title}}
+      </navigator>
+    </block>
+  </view>
+</view>

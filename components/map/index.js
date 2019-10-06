@@ -4,43 +4,44 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    lat: Number,
-    log: Number,
-    iconPath: String
+    latitude: Number,
+    longitude: Number,
+    address:String
   },
-
   /**
    * 组件的初始数据
    */
   data: {
-    latitude: 23.099994,
-    longitude: 113.324520,
     markers: [{
       id: 0,
+      iconPath:"../../images/location.png",
       latitude: 23.099994,
       longitude: 113.324520,
-      iconPath:'https://res.mekeai.com/00107ebb-dd6f-46a0-9429-a7d3495b7889',
-      width:20,
-      height:20
+      width: 30,
+      height: 30,
+      callout: {
+        content: "where",
+        color: "#fff",
+        fontSize: 12,
+        borderRadius: 4,
+        bgColor: "#2bd798",
+        borderColor: "#2bd798",
+        display: "ALWAYS",
+        padding: 5,
+        textAlign: "center"
+      }
     }]
   },
   attached(){
-    let latitude = this.properties.lat;
-    let longitude = this.properties.log;
-    let iconPath = this.properties.iconPath;
+    let latitude = this.properties.latitude;
+    let longitude = this.properties.longitude;
+    let address = this.properties.address;
     let markers = this.data.markers;
-    markers[0] = {
-      id: latitude, 
-      latitude, 
-      longitude, 
-      iconPath,
-      width:20,
-      height: 20
-    }
+    markers[0].latitude= latitude;
+    markers[0].longitude = longitude;
+    markers[0].callout['content'] = address;
     this.setData({
-      markers,
-      latitude,
-      longitude
+      markers
     })
   },
   /**

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "乐天体育",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

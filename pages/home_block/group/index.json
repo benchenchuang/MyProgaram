@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "集团介绍",
+  "usingComponents": {
+    "show-banner": "../../../components/banner/index",
+    "header": "../../../components/header/index"
+  }
+}

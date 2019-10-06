@@ -1,14 +1,100 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/newsDetail/index"
+    "pages/industry/index",
+    "pages/dynamic/index",
+    "pages/talent/index",
+    "pages/about/index",
+    "pages/newsDetail/index",
+    "pages/home_block/landscape/index",
+    "pages/home_block/no_data/index",
+    "pages/home_block/group/index",
+    "pages/industry_block/travel/index",
+    "pages/industry_block/construction/index",
+    "pages/industry_block/health/index",
+    "pages/industry_block/education/index",
+    "pages/industry_block/travel/hotel/index",
+    "pages/industry_block/travel/serve/index",
+    "pages/industry_block/travel/sports/index",
+    "pages/industry_block/travel/observe/index",
+    "pages/industry_block/travel/bank/index",
+    "pages/industry_block/travel/street/index",
+    "pages/industry_block/travel/tower/index",
+    "pages/industry_block/travel/zhongwu/index",
+    "pages/industry_block/construction/nursing/index",
+    "pages/industry_block/construction/square/index",
+    "pages/industry_block/construction/hotel/index",
+    "pages/industry_block/health/tn_enviroment/index",
+    "pages/industry_block/health/tn_equipment/index",
+    "pages/industry_block/health/ximenzi/index",
+    "pages/industry_block/health/camera/index",
+    "pages/industry_block/health/philips/index",
+    "pages/industry_block/health/fusion/index",
+    "pages/industry_block/health/gastroscope/index",
+    "pages/industry_block/health/at_enviroment/index",
+    "pages/industry_block/health/scope/index",
+    "pages/industry_block/health/at_equipment/index",
+    "pages/industry_block/education/feibu/index",
+    "pages/industry_block/education/runlong/index",
+    "pages/industry_block/education/venues/index",
+    "pages/industry_block/education/qsy/index",
+    "pages/industry_block/education/tn/index",
+    "pages/industry_block/education/zl/index",
+    "pages/industry_block/education/st/index",
+    "pages/industry_block/education/dz/index",
+    "pages/industry_block/education/jm/index",
+    "pages/industry_block/education/hl/index",
+    "pages/industry_block/education/cj/index",
+    "pages/industry_block/education/gxy/index",
+    "pages/industry_block/education/lt/index",
+    "pages/about/navigator/index",
+    "pages/about/map_detail/index",
+    "pages/webview/index",
+    "pages/newsDetail/comment/index",
+    "pages/talent/jobs/index",
+    "pages/talent/job/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "晋陵幸福+",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#272f84",
+    "selectedColor": "#ca4309",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home.png"
+      },
+      {
+        "pagePath": "pages/industry/index",
+        "text": "晋陵产业",
+        "iconPath": "./images/industry.png",
+        "selectedIconPath": "./images/industry.png"
+      },
+      {
+        "pagePath": "pages/dynamic/index",
+        "text": "晋陵动态",
+        "iconPath": "./images/dynamic.png",
+        "selectedIconPath": "./images/dynamic.png"
+      },
+      {
+        "pagePath": "pages/talent/index",
+        "text": "人才发展",
+        "iconPath": "./images/talent.png",
+        "selectedIconPath": "./images/talent.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "联系我们",
+        "iconPath": "./images/us.png",
+        "selectedIconPath": "./images/us.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

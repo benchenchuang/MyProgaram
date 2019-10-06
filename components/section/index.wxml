@@ -1,0 +1,9 @@
+<!--components/section/index.wxml-->
+<view class="section_wrap">
+  <block wx:for="{{sections}}" wx:key="index">
+    <navigator class="section" url="{{item.path}}" hover-class="none">
+      <image class="show" src="{{item.pic}}" mode="widthFix"/>
+      <view class="title">{{item.title}}</view>
+    </navigator>
+  </block>
+</view>

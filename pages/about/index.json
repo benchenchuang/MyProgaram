@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "联系我们",
+  "usingComponents": {
+    "show-map": "../../components/map/index",
+    "header": "../../components/header/index",
+    "show-banner": "../../components/banner/index"
+  }
+}

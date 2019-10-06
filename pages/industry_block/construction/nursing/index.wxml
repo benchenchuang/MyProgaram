@@ -1,0 +1,7 @@
+<!--pages/industry_block/construction/nursing/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="江苏省工人常州疗养院常州市康复医院" subTitle="Development and construction"/>
+<view class="container">
+江苏省工人常州疗养院常州市康复医院是常州市总工会投资的大型康养项目,坐落于西太湖生态休闲区，项目占地122亩,建筑面积82924平方米,总投资6.65亿元，是一所集疗养、体检、康复、医疗四大功能为一体的三甲医院，主要建筑有康复中心、体检中心、VIP疗养及疗养配套楼、高压氧舱等，总床位519张，同时也是覆盖康复、医疗、疗养、营养餐饮、学术交流等配套完善的现代化综合医疗社区。
+<view>该项目实施过程被中国建筑业协会评定为“全国建筑业绿色施工示范工程”和“AAA级安全文明标准化工地”。2018年获得中国建筑工程装饰奖。</view>
+</view>

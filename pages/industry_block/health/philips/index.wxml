@@ -1,0 +1,5 @@
+<!--pages/industry_block/travel/hotel/index.wxml-->
+<show-banner banners="{{banners}}"/>
+<header title="磁控胶囊胃镜" subTitle="主要设备介绍"/>
+<view class="container">实现了人类“不插管做胃镜”的梦想。只需随水吞下一粒胶囊大小的胶囊内窥镜，短短15分钟，即可完成无痛、无创、无麻醉、无死角、无交叉感染的胃镜检查。对于扩大消化道检查人群范围，提高消化道疾病尤其是早期癌症的检出率，以及降低消化道恶性肿瘤发病率具有重大现实意义。
+</view>

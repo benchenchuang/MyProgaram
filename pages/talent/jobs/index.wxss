@@ -1,0 +1,7 @@
+/* pages/talent/jobs/index.wxss */
+.no_data{
+  font-size: 28rpx;
+  color: #999;
+  margin: 200rpx 0;
+  text-align: center;
+}

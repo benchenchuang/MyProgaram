@@ -1,0 +1,6 @@
+<!--pages/newsDetail/comment/index.wxml-->
+<view class="comment">
+  <view class="title">标题：{{title}}</view>
+  <textarea value="{{params.content}}" bindinput="changeComment" placeholder="请输入留言内容"></textarea>
+</view>
+<view class="comment_btn" bindtap="sendComment">留言</view>

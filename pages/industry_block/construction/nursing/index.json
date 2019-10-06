@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "江苏省工人常州疗养院常州市康复医院",
+  "usingComponents": {
+    "show-banner": "../../../../components/banner/index",
+    "header": "../../../../components/header/index"
+  }
+}

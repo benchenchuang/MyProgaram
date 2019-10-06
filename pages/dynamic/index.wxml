@@ -1,0 +1,15 @@
+<!--pages/dynamic/index.wxml-->
+<!-- <show-banner banners="{{banners}}"/> -->
+<view>
+  <image class="show_pic" src="../../images/dynamic/banner_01.jpg" mode="widthFix"></image>
+</view>
+<image class="show_pic" src="../../images/dynamic/header.jpg" mode="widthFix"></image>
+<header wx:if="{{actives.length}}" title="线下活动" subTitle="Offine Activity"/>
+<show-banner banners="{{actives}}"/>
+<header title="新闻中心" subTitle="News"/>
+<view class="tabs flex">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view class="tab {{params.category==item.value?'on':''}}" data-category="{{item.value}}" bindtap="selectTab">{{item.name}}</view>
+  </block>
+</view>
+<news-item news="{{news}}"/>
