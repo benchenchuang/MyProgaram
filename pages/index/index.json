@@ -2,10 +2,6 @@
   "usingComponents": {
     "show-map":"../../components/map/index",
     "show-banner":"../../components/banner/index",
-<<<<<<< HEAD
     "news-item":"../../components/news/index"
-=======
-    "header":"../../components/header/index"
->>>>>>> d2bacc80894de017cf3fd7518671824b73382488
   }
 }

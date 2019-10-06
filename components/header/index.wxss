@@ -1,18 +1,12 @@
 /* components/head/index.wxss */
 .header{
-<<<<<<< HEAD
   padding: 30rpx 0;
   text-align: center;
   background: #fff;
-=======
-  margin: 20rpx 0;
-  text-align: center;
->>>>>>> d2bacc80894de017cf3fd7518671824b73382488
 }
 .title{
   position: relative;
   font-size: 28rpx;
-<<<<<<< HEAD
   color: #333;
 }
 .title .line{
@@ -22,26 +16,6 @@
   height: 6rpx;
   background: #a11f26;
   vertical-align: middle;
-=======
-  color: #666;
-}
-.title::before,
-.title::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 30rpx;
-  height: 4rpx;
-  background: #666;
-}
-.title::before{
-  right: 50%;
-  transform: translateX(-240%);
-}
-.title::after{
-  left: 50%;
-  transform: translateX(240%);
->>>>>>> d2bacc80894de017cf3fd7518671824b73382488
 }
 .subTitle{
   margin-top: 14rpx;
