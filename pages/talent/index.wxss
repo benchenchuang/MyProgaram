@@ -21,6 +21,7 @@
   height: 70rpx;
   line-height: 56rpx;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .jobs_tabs .tab_bg{
   position: absolute;
@@ -70,6 +71,7 @@
   height: 77rpx;
   line-height: 77rpx;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .urgent_header .urgent_bg{
   position: absolute;

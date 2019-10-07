@@ -18,14 +18,16 @@ Page({
   },
   //获取招聘列表
   getJobList(params) {
-    wx.showLoading({
-      title: '获取列表中',
-    })
+    // wx.showLoading({
+    //   title: '获取列表中',
+    // })
     commonApi.getJobList(params).then(res => {
-      wx.hideLoading();
+      // wx.hideLoading();
       if (res.code == 1) {
+        let jobs = this.data.jobs;
+        jobs = jobs.concat(res.data)
         this.setData({
-          jobs: res.data
+          jobs
         })
       }
     })

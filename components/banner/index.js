@@ -23,11 +23,23 @@ Component({
     interval: 4000,
     duration: 500
   },
-
   /**
    * 组件的方法列表
    */
   methods: {
-
+    navigateWeb(e) {
+      let type = e.currentTarget.dataset.type;
+      let id = e.currentTarget.dataset.id;
+      let url = e.currentTarget.dataset.url;
+      if (type == 1) {
+        wx.navigateTo({
+          url: '/pages/newsDetail/index?id=' + id,
+        })
+      } else if (type == 0){
+        wx.navigateTo({
+          url: '/pages/webview/index?url=' + url,
+        })
+      }
+    },
   }
 })

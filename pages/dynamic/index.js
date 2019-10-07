@@ -51,7 +51,11 @@ Page({
   },
   //获取新闻列表
   getNewsList(params){
+    // wx.showLoading({
+    //   title: '加载新闻列表',
+    // })
     app.getNewsList(params).then(res=>{
+      // wx.hideLoading()
       let news = this.data.news;
       news = news.concat(res)
       this.setData({
@@ -116,13 +120,6 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
 
   },
 

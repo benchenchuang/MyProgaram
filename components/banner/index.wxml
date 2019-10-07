@@ -3,12 +3,15 @@
   <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff" indicator-color="#bcc2c6" autoplay="{{autoplay}}" interval="{{interval}}" style="height:{{height}}rpx" duration="{{duration}}">
     <block wx:for="{{banners}}" wx:key="index">
       <swiper-item>
-        <navigator wx:if="{{item.type==1}}" url="/pages/newsDetail/index?id={{item.article_id}}" class="swiper-item">
+        <view data-type="{{item.type}}" data-id="{{item.article_id}}" data-url="{{item.url}}" bindtap="navigateWeb" class="swiper-item">
+          <image src="{{baseUrl}}/{{item.image || item.path}}" mode="widthFix"></image>
+        </view>
+        <!-- <navigator wx:if="{{item.type==1}}" url="/pages/newsDetail/index?id={{item.article_id}}" class="swiper-item">
           <image src="{{baseUrl}}/{{item.image || item.path}}" mode="widthFix"></image>
         </navigator>
         <navigator wx:else url="/pages/webview/index?url={{item.url}}" class="swiper-item">
           <image src="{{baseUrl}}/{{item.image || item.path}}" mode="widthFix"></image>
-        </navigator>
+        </navigator> -->
       </swiper-item>
     </block>
   </swiper>

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    globalUrl:app.globalData.globalUrl,
     banners:[
       {
         title: '1',

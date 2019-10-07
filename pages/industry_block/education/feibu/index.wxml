@@ -4,22 +4,22 @@
 <view class="container">
   <view class="article">
     <view class="title">常州市第三中学体育馆</view>
-    <image src="{{globalUrl}}/education/feibu/01.jpg" mode="widthFix"></image>
-    <image src="{{globalUrl}}/education/feibu/02.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/01.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/02.jpg" mode="widthFix"></image>
   </view>
   <view class="article">
     <view class="title">常州市第五中学体育馆</view>
-    <image src="{{globalUrl}}/education/feibu/03.jpg" mode="widthFix"></image>
-    <image src="{{globalUrl}}/education/feibu/04.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/03.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/04.jpg" mode="widthFix"></image>
   </view>
   <view class="article">
     <view class="title">常州市戚墅堰高级中学体育馆</view>
-    <image src="{{globalUrl}}/education/feibu/05.jpg" mode="widthFix"></image>
-    <image src="{{globalUrl}}/education/feibu/06.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/05.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/06.jpg" mode="widthFix"></image>
   </view>
   <view class="article">
     <view class="title">常州市田家炳高级中学体育馆</view>
-    <image src="{{globalUrl}}/education/feibu/07.jpg" mode="widthFix"></image>
-    <image src="{{globalUrl}}/education/feibu/08.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/07.jpg" mode="widthFix"></image>
+    <image src="{{globalUrl}}education/feibu/08.jpg" mode="widthFix"></image>
   </view>
 </view>

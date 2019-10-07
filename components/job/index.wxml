@@ -14,7 +14,7 @@
             <text>{{itemName.welfare}}</text>
           </block>
         </view>
-        <view class="date">{{item.createtime}}</view>
+        <view class="date">{{item.start_time}}</view>
       </view>
       <view class="job_btn">了解详情</view>
     </navigator>
@@ -31,7 +31,7 @@
             <text>{{itemName.welfare}}</text>
           </block>
         </view>
-        <view class="date">{{item.createtime}}</view>
+        <view class="date">{{item.start_time}}</view>
       </view>
       <view class="job_btn">了解详情</view>
     </navigator>
