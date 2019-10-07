@@ -59,15 +59,22 @@ Page({
     })
   },
   onLoad: function () {
-    let params = this.data.params;
     this.getBanners();
-    this.getNewsList(params);
   },
   //上拉触底
   onReachBottom(){
     let params = this.data.params;
     params.page++;
     this.setData({
+      params
+    })
+    this.getNewsList(params);
+  },
+  onShow(){
+    let params = this.data.params;
+    params.page = 1;
+    this.setData({
+      news:[],
       params
     })
     this.getNewsList(params);

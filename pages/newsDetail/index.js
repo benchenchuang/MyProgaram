@@ -25,9 +25,11 @@ Page({
         wx.setNavigationBarTitle({
           title: res.data.title
         })
-        let params = this.data.params;
-        params.article_id = res.data.id;
-        this.getCommentList(params);
+        // let params = this.data.params;
+        // params.article_id = res.data.id;
+        // if (res.data.can_comment){
+        //   this.getCommentList(params);
+        // }
         this.setData({
           article:res.data,
           content: WxParse.wxParse('content', 'html', res.data.content, this)
@@ -134,11 +136,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let params = this.data.params;
     let id = options.id;
     let userId = app.globalData.userInfo.id;
     this.getNewsInfo(id);
+    params.article_id = id;
     this.setData({
-      userId
+      userId,
+      params
     });
     app.getAuthorize().then(res => {
       this.setData({
