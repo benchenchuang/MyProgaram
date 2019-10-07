@@ -1,7 +1,7 @@
 <!--pages/news/index.wxml-->
 <import src="../../wxParse/wxParse.wxml"/>
 <view class="article">
-  <view class="title">{{articel.title}}</view>
+  <view class="title">{{article.title}}</view>
   <view class="time">{{article.public_time}}</view>
   <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
   <view class="other">
