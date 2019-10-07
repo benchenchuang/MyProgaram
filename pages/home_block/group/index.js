@@ -9,11 +9,19 @@ Page({
     banners: [
       {
         title: '1',
-        path: app.globalData.globalUrl+'/1.jpg'
+        path: '/uploads/20191007/5b1f3910e9384ebc953187826aea9e0d.jpg'
       },
       {
         title: '2',
-        path: app.globalData.globalUrl +'2.png'
+        path: '/uploads/20191007/0509fd161c3ba27cbc1787075ac472f9.jpg'
+      },
+      {
+        title: '1',
+        path: '/uploads/20191007/8b1101b272001f956cdb31d5481d6516.jpg'
+      },
+      {
+        title: '2',
+        path: '/uploads/20191007/2302991a8f2a576bffe3cb439907c269.jpg'
       }
     ],
   },

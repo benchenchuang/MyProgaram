@@ -1,1 +1,4 @@
 /* pages/industry_block/travel/hotel/index.wxss */
+.group_video{
+  width: 100%;
+}

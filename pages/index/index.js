@@ -11,8 +11,8 @@ Page({
         pic: app.globalData.globalUrl +'home_tab01.png'
       },
       {
-        url:'../talent/index',
-        isTab:true,
+        url:'../talent/jobs/index?is_urgent=1',
+        isTab:false,
         pic: app.globalData.globalUrl +'home_tab02.png'
       },
       {

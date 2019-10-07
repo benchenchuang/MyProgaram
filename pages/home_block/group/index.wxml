@@ -1,5 +1,5 @@
 <!--pages/home_block/group/index.wxml-->
-<show-banner banners="{{banners}}"/>
+<show-banner banners="{{banners}}" height="281"/>
 <view class="content">
   <header title="集团介绍" subTitle="company profile"/>
   <view class="desc">
