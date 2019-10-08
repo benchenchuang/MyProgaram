@@ -13,9 +13,7 @@ const getToken = () => {
  */
 const httpRequest = (url, method, params) => {
   let token = getToken()
-  if (params && token){
-    params.token = token;
-  }
+  params.token = token;
   let promise = new Promise((resolve, reject) => {
     wx.request({
       url: `${baseUrl}${url}`,

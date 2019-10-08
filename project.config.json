@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -66,9 +66,9 @@
 				},
 				{
 					"id": 2,
-					"name": "开发",
-					"pathName": "pages/talent/job/index",
-					"query": "",
+					"name": "pages/newsDetail/index",
+					"pathName": "pages/newsDetail/index",
+					"query": "id=2",
 					"scene": null
 				}
 			]
