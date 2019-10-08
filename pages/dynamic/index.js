@@ -75,9 +75,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let params = this.data.params;
     this.getBanners();
-    this.getNewsList(params)
+    this.initNews();
   },
   //上拉触底
   onReachBottom() {
@@ -93,6 +92,18 @@ Page({
    */
   onReady: function () {
 
+  },
+  onPullDownRefresh() {
+    this.initNews();
+  },
+  initNews() {
+    let params = this.data.params;
+    params.page = 1;
+    this.setData({
+      params,
+      news: []
+    })
+    this.getNewsList(params);
   },
 
   /**
@@ -115,14 +126,6 @@ Page({
   onUnload: function () {
 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
   /**
    * 用户点击右上角分享
    */

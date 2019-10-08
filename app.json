@@ -55,7 +55,7 @@
     "pages/talent/job/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "晋陵幸福+",
     "navigationBarTextStyle": "black"

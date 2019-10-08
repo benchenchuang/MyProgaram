@@ -112,10 +112,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    let newsParams = this.data.newsParams;
     let params = this.data.params;
     this.getBanners();
-    this.getNewsList(newsParams);
+    this.initNews();
     this.getJobList(params);
     this.getUrgentList();
   },
@@ -127,6 +126,18 @@ Page({
       params
     })
     this.getNewsList(params);
+  },
+  onPullDownRefresh() {
+    this.initNews();
+  },
+  initNews() {
+    let newsParams = this.data.newsParams;
+    newsParams.page = 1;
+    this.setData({
+      newsParams,
+      news: []
+    })
+    this.getNewsList(newsParams);
   },
 
   /**
@@ -154,13 +165,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
 
   },
 

@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "职位列表",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "job-item": "../../../components/job/index"
   }

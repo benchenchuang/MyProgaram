@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "人才发展",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "show-banner": "../../components/banner/index",
     "header": "../../components/header/index",

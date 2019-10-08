@@ -59,9 +59,8 @@ Page({
     })
   },
   onLoad: function () {
-    let params = this.data.params;
     this.getBanners();
-    this.getNewsList(params);
+    this.initNews();
   },
   //上拉触底
   onReachBottom(){
@@ -69,6 +68,18 @@ Page({
     params.page++;
     this.setData({
       params
+    })
+    this.getNewsList(params);
+  },
+  onPullDownRefresh(){
+    this.initNews();
+  },
+  initNews(){
+    let params = this.data.params;
+    params.page = 1;
+    this.setData({
+      params,
+      news: []
     })
     this.getNewsList(params);
   }

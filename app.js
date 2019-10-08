@@ -85,6 +85,7 @@ App({
             icon:'none'
           })
         }
+        wx.stopPullDownRefresh();
       })
     })
     return promise;

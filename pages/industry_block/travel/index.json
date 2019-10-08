@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "文化旅游",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "show-banner": "../../../components/banner/index",
     "header": "../../../components/header/index",
