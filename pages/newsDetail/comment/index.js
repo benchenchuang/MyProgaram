@@ -48,6 +48,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.hideShareMenu({})
     let article_id = options.id;
     let title = options.title;
     let params = this.data.params;

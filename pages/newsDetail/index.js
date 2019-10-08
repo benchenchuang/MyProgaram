@@ -21,6 +21,7 @@ Page({
   //获取文章详情
   getNewsInfo(id){
     commonApi.getNewsInfo({article_id:id}).then(res=>{
+      wx.hideLoading()
       if(res.code==1){
         wx.setNavigationBarTitle({
           title: res.data.title
@@ -136,20 +137,42 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let token = wx.getStorageSync('token')
     let params = this.data.params;
     let id = options.id;
-    let userId = app.globalData.userInfo.id;
-    this.getNewsInfo(id);
-    params.article_id = id;
-    this.setData({
-      userId,
-      params
-    });
-    app.getAuthorize().then(res => {
-      this.setData({
-        isAuthorize: res
-      })
+    wx.showLoading({
+      title: '文章加载中...',
     })
+    if (token){
+      app.getAuthorize().then(res => {
+        this.setData({
+          isAuthorize: res
+        })
+      })
+      let userId = app.globalData.userInfo.id;
+      this.getNewsInfo(id);
+      params.article_id = id;
+      this.setData({
+        userId,
+        params
+      });
+    }else{
+      app.getUserInfo().then(r=>{
+        console.log(r)
+        app.getAuthorize().then(res => {
+          this.setData({
+            isAuthorize: res
+          })
+        })
+        let userId = app.globalData.userInfo.id;
+        this.getNewsInfo(id);
+        params.article_id = id;
+        this.setData({
+          userId,
+          params
+        });
+      })
+    }
   },
   //上拉触底
   onReachBottom() {
