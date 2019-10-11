@@ -31,6 +31,7 @@
 }
 .group_video{
   width: 100%;
+  height: 424rpx;
 }
 .group_news{
   border-top: 20rpx solid #f7f7f7;

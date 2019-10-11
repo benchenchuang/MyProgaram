@@ -6,7 +6,8 @@ Component({
   properties: {
     latitude: Number,
     longitude: Number,
-    address:String
+    address:String,
+    name:String
   },
   /**
    * 组件的初始数据
@@ -48,6 +49,19 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    openLocation() {
+      console.log(2)
+      let latitude = this.properties.latitude;
+      let longitude = this.properties.longitude;
+      let address = this.properties.address;
+      let name = this.properties.name || '';
+      wx.openLocation({
+        latitude: latitude,
+        longitude: longitude,
+        scale: '14',
+        name: name,
+        address: address
+      })
+    },
   }
 })

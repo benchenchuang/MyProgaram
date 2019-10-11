@@ -4,7 +4,7 @@
     <block wx:for="{{banners}}" wx:key="index">
       <swiper-item>
         <view data-type="{{item.type}}" data-id="{{item.article_id}}" data-url="{{item.url}}" bindtap="navigateWeb" class="swiper-item">
-          <image src="{{baseUrl}}/{{item.image || item.path}}" mode="widthFix"></image>
+          <image src="{{baseUrl}}/{{item.image || item.path}}" mode="aspectFit"></image>
         </view>
         <!-- <navigator wx:if="{{item.type==1}}" url="/pages/newsDetail/index?id={{item.article_id}}" class="swiper-item">
           <image src="{{baseUrl}}/{{item.image || item.path}}" mode="widthFix"></image>

@@ -1,13 +1,16 @@
 /* pages/talent/job/index.wxss */
 .wrap{
   padding: 30rpx;
-  font-size: 26rpx;
-  color: #666;
+  font-size: 28rpx;
+  color: #444;
   line-height: 1.8;
   background: #fff;
 }
 .header text{
   margin-right: 20rpx;
+}
+.header .label{
+  font-weight: 700;
 }
 .apply_wrap{
   padding: 30rpx;

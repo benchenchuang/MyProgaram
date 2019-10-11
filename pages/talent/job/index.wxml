@@ -1,11 +1,11 @@
 <!--pages/talent/job/index.wxml-->
 <import src="../../../wxParse/wxParse.wxml"/>
 <view class="wrap">
-  <view class="header">职位名称：{{info.title}}</view>
-  <view class="header">工作地点：<text>{{info.work_place}}</text></view>
-  <view class="header">学历要求：<text>{{info.education}}</text></view>
-  <view class="header">工作经验：<text>{{info.experience}}</text></view>
-  <view class="header">职位福利：
+  <view class="header"><text class="label">职位名称：</text>{{info.title}}</view>
+  <view class="header"><text class="label">工作地点：</text><text>{{info.work_place}}</text></view>
+  <view class="header"><text class="label">学历要求：</text><text>{{info.education}}</text></view>
+  <view class="header"><text class="label">工作经验：</text><text>{{info.experience}}</text></view>
+  <view class="header"><text class="label">职位福利：</text>
     <block wx:for="{{info.welfares}}" wx:key="index">
       <text>{{item.welfare}}</text>
     </block>
@@ -26,6 +26,12 @@
     <view class="label"><text>*</text>电话</view>
     <view class="item flex_item">
       <input type="number" value="{{apply.phone}}" data-type="phone" bindinput="changePut" placeholder="请输入电话"></input>
+    </view>
+  </view>
+  <view class="apply_item flex">
+    <view class="label"><text>*</text>邮箱</view>
+    <view class="item flex_item">
+      <input type="text" value="{{apply.email}}" data-type="email" bindinput="changePut" placeholder="请输入邮箱"></input>
     </view>
   </view>
   <view class="apply_item flex">

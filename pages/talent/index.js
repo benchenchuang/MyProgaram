@@ -41,7 +41,7 @@ Page({
     params:{
       part:1,
       page:1,
-      pagesize:2
+      pagesize:3
     }
   },
   //获取轮播图
@@ -71,7 +71,7 @@ Page({
     let params={
       is_urgent:1,
       page:1,
-      pagesize:2
+      pagesize:3
     }
     commonApi.getJobList(params).then(res => {
       if (res.code == 1) {
@@ -92,9 +92,12 @@ Page({
     this.getJobList(params)
   },
   //获取新闻列表
-  getNewsList(params) {
-    let news = this.data.news;
+  getNewsList(params, isUpdate=false) {
     app.getNewsList(params).then(res => {
+      let news = [];
+      if (!isUpdate) {
+        news = this.data.news;
+      }
       news = news.concat(res)
       this.setData({
         news
@@ -114,7 +117,7 @@ Page({
   onLoad: function () {
     let params = this.data.params;
     this.getBanners();
-    this.initNews();
+    this.initNews(true);
     this.getJobList(params);
     this.getUrgentList();
   },
@@ -127,17 +130,36 @@ Page({
     })
     this.getNewsList(params);
   },
-  onPullDownRefresh() {
-    this.initNews();
+  onTabItemTap(){
+    let params = this.data.params;
+    params.page = 1;
+    this.setData({
+      params
+    })
+    this.initNews(true);
+    this.getBanners();
+    this.getJobList(params);
+    this.getUrgentList();
   },
-  initNews() {
+  onPullDownRefresh() {
+    let params = this.data.params;
+    console.log(params)
+    params.page = 1;
+    this.setData({
+      params
+    })
+    this.initNews(true);
+    this.getBanners();
+    this.getJobList(params);
+    this.getUrgentList();
+  },
+  initNews(isUpdate) {
     let newsParams = this.data.newsParams;
     newsParams.page = 1;
     this.setData({
-      newsParams,
-      news: []
+      newsParams
     })
-    this.getNewsList(newsParams);
+    this.getNewsList(newsParams, isUpdate);
   },
 
   /**

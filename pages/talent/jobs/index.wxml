@@ -3,5 +3,6 @@
   <job-item jobs="{{jobs}}"/>
 </view>
 <view wx:else>
-  <view class="no_data">暂无数据</view>
+  <view wx:if="{{isLoad}}" class="no_data">获取列表中</view>
+  <view wx:else class="no_data">暂无数据</view>
 </view>

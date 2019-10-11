@@ -13,9 +13,9 @@
 <view class="btn_area" wx:if="{{jobs.length}}">
   <navigator class="more_btn" url="./jobs/index?type={{params.part}}" hover-class="none">点击查看更多招聘信息</navigator>
 </view>
-<view wx:else>
-  <view class="no_data">暂无内容</view>
-</view>
+<!-- <view wx:else>
+  <view class="no_data">列表获取中</view>
+</view> -->
 
 <view class="urgent">
   <view class="urgent_header">

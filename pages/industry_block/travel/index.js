@@ -48,9 +48,12 @@ Page({
     }
   },
   //获取新闻列表
-  getNewsList(params) {
+  getNewsList(params,isUpdate=false) {
     app.getNewsList(params).then(res => {
-      let news = this.data.news;
+      let news = [];
+      if(!isUpdate){
+        news = this.data.news;
+      }
       news = news.concat(res)
       this.setData({
         news
@@ -69,7 +72,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.initNews();
+    this.initNews(true);
   },
   /**
    * 页面上拉触底事件的处理函数
@@ -90,16 +93,15 @@ Page({
 
   },
   onPullDownRefresh() {
-    this.initNews();
+    this.initNews(true);
   },
-  initNews() {
+  initNews(isUpdate) {
     let params = this.data.params;
     params.page = 1;
     this.setData({
-      params,
-      news: []
+      params
     })
-    this.getNewsList(params);
+    this.getNewsList(params,isUpdate);
   },
 
   /**

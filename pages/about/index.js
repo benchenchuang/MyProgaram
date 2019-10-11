@@ -40,15 +40,6 @@ Page({
       phoneNumber:'0519-82000121'
     })
   },
-  openLocation(){
-    wx.openLocation({
-      latitude: 31.80346,
-      longitude: 119.97136,
-      scale: '14',
-      name: '常州晋陵投资集团',
-      address: '常州市锦绣路2号（文化广场2-2号11楼）'
-    })
-  },
   setPutValue(e){
     let type = e.currentTarget.dataset.type;
     let value = e.detail.value;

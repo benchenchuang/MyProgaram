@@ -17,6 +17,7 @@ Page({
       employment_id:'',
       realname:'',
       phone:'',
+      email:'',
       education:'',
       age:'',
       sex:'男',
@@ -104,11 +105,12 @@ Page({
   },
   //提交简历
   submitResume(){
-    let { realname, phone, education, age, sex, experience} = this.data.apply;
+    let { realname, phone, email,education, age, sex, experience} = this.data.apply;
     let cv_images = this.data.photos.join(',');
     let apply = this.data.apply;
     apply.cv_images = cv_images;
     let phoneReg = /^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\d{8}$/;
+    let emailReg = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
     if(!realname){
       wx.showToast({
         title: '请输入姓名',
@@ -125,6 +127,19 @@ Page({
     } else if (!phoneReg.test(phone)) {
       wx.showToast({
         title: '手机号不正确',
+        icon: 'none'
+      });
+      return;
+    }
+    if (!email) {
+      wx.showToast({
+        title: '邮箱不能为空',
+        icon: 'none'
+      });
+      return;
+    } else if (!emailReg.test(email)) {
+      wx.showToast({
+        title: '邮箱格式不正确',
         icon: 'none'
       });
       return;

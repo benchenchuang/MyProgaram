@@ -14,6 +14,7 @@ Page({
       page:1,
       pagesize:10
     },
+    isLoad:true,
     jobs:[]
   },
   //获取招聘列表
@@ -22,7 +23,7 @@ Page({
     //   title: '获取列表中',
     // })
     commonApi.getJobList(params).then(res => {
-      // wx.hideLoading();
+      wx.hideLoading();
       if (res.code == 1) {
         let jobs = this.data.jobs;
         jobs = jobs.concat(res.data)
@@ -36,6 +37,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '列表获取中',
+    })
     let part = options.type || '';
     let is_urgent = options.is_urgent || '';
     let keyword = options.keyword || '';
@@ -53,7 +57,8 @@ Page({
     let params = this.data.params;
     params.page++;
     this.setData({
-      params
+      params,
+      isLoad:false
     })
     this.getJobList(params);
   },
@@ -73,7 +78,8 @@ Page({
     params.page = 1;
     this.setData({
       params,
-      jobs:[]
+      jobs:[],
+      isLoad:true
     })
     this.getJobList(params);
     setTimeout(()=>{

@@ -49,9 +49,13 @@ Page({
     })
   },
   //获取新闻列表
-  getNewsList(params){
-    let news = this.data.news;
+  getNewsList(params,isUpdate=false){
+    
     app.getNewsList(params).then(res=>{
+      let news = [];
+      if (!isUpdate) {
+        news = this.data.news;
+      }
       news = news.concat(res)
       this.setData({
         news
@@ -71,16 +75,20 @@ Page({
     })
     this.getNewsList(params);
   },
-  onPullDownRefresh(){
-    this.initNews();
+  onTabItemTap() {
+    this.getBanners();
+    this.initNews(true);
   },
-  initNews(){
+  onPullDownRefresh(){
+    this.getBanners();
+    this.initNews(true);
+  },
+  initNews(isUpdate){
     let params = this.data.params;
     params.page = 1;
     this.setData({
-      params,
-      news: []
+      params
     })
-    this.getNewsList(params);
+    this.getNewsList(params, isUpdate);
   }
 })

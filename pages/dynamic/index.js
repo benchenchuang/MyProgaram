@@ -39,24 +39,26 @@ Page({
   },
   //切换新闻类型
   selectTab(e){
+    wx.showLoading({
+      title: '列表获取中...',
+    })
     let category = e.currentTarget.dataset.category;
     let params = this.data.params;
     params.category = category;
     params.page = 1;
     this.setData({
-      params,
-      news:[]
+      params
     });
-    this.getNewsList(params);
+    this.getNewsList(params,true);
   },
   //获取新闻列表
-  getNewsList(params){
-    // wx.showLoading({
-    //   title: '加载新闻列表',
-    // })
+  getNewsList(params, isUpdate = false){
     app.getNewsList(params).then(res=>{
-      // wx.hideLoading()
-      let news = this.data.news;
+      wx.hideLoading()
+      let news = [];
+      if (!isUpdate) {
+        news = this.data.news;
+      }
       news = news.concat(res)
       this.setData({
         news
@@ -93,17 +95,21 @@ Page({
   onReady: function () {
 
   },
-  onPullDownRefresh() {
-    this.initNews();
+  onTabItemTap() {
+    this.getBanners();
+    this.initNews(true);
   },
-  initNews() {
+  onPullDownRefresh() {
+    this.getBanners();
+    this.initNews(true);
+  },
+  initNews(isUpdate) {
     let params = this.data.params;
     params.page = 1;
     this.setData({
-      params,
-      news: []
+      params
     })
-    this.getNewsList(params);
+    this.getNewsList(params, isUpdate);
   },
 
   /**

@@ -3,7 +3,7 @@
   <block wx:for="{{navigators}}" wx:key="index">
     <view class="map_item">
       <header title="{{item.title}}" subTitle="{{item.english}}"/>
-      <show-map latitude="{{item.latitude}}" longitude="{{item.longitude}}" address="{{item.address}}"/>
+      <show-map latitude="{{item.latitude}}" name="{{item.title}}" longitude="{{item.longitude}}" address="{{item.address}}"/>
       <image class="show_address" src="{{item.pic}}" data-phone="{{item.telphone}}" bindtap="callPhone" mode="widthFix"></image>
       <view class="other_company" wx:if="{{item.child.length}}" bindtap="scanMapList" data-index="{{index}}">查看其他分公司导航</view>
     </view>

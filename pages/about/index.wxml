@@ -3,11 +3,10 @@
 <view class="header_title">
   <image class="show_image" src="../../images/about/about_header.jpg" mode="widthFix"/>
 </view>
-<show-map latitude="31.80346" longitude="119.97136" address="常州市锦绣路2号（文化广场2-2号11楼）"/>
+<show-map latitude="31.80346" longitude="119.97136" name="常州晋陵投资集团" address="常州市锦绣路2号（文化广场2-2号11楼）"/>
 <view class="header_title">
   <image class="show_image" bindtap="callTelphone" src="../../images/about/group_location.jpg" mode="widthFix"/>
 </view>
-<view bindtap="openLocation" class="location_btn">一键导航</view>
 <navigator class="other_company" url="./navigator/index" hover-class="none">查看其他分公司导航</navigator>
 <header title="留言反馈" subTitle="Message Feedback"/>
 
