@@ -10,7 +10,8 @@
       <text>{{item.welfare}}</text>
     </block>
   </view>
-  <view class="title">具体内容：
+  <view class="header">
+  	<text class="label">具体内容：</text>
     <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
   </view>
 </view>
