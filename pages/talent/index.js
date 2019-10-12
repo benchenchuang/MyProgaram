@@ -33,7 +33,7 @@ Page({
     jobs:[],
     urgentJobs:[],
     news:[],
-    newsParams: {
+    parameter: {
       category: 10,
       page: 1,
       pagesize: 10
@@ -92,8 +92,8 @@ Page({
     this.getJobList(params)
   },
   //获取新闻列表
-  getNewsList(params, isUpdate=false) {
-    app.getNewsList(params).then(res => {
+  getNewsList(parameter, isUpdate=false) {
+    app.getNewsList(parameter).then(res => {
       let news = [];
       if (!isUpdate) {
         news = this.data.news;
@@ -123,12 +123,12 @@ Page({
   },
   //上拉触底
   onReachBottom() {
-    let params = this.data.newsParams;
-    params.page++;
+    let parameter = this.data.parameter;
+    parameter.page++;
     this.setData({
-      params
+      parameter
     })
-    this.getNewsList(params);
+    this.getNewsList(parameter);
   },
   onTabItemTap(){
     let params = this.data.params;
@@ -154,12 +154,12 @@ Page({
     this.getUrgentList();
   },
   initNews(isUpdate) {
-    let newsParams = this.data.newsParams;
-    newsParams.page = 1;
+    let parameter = this.data.parameter;
+    parameter.page = 1;
     this.setData({
-      newsParams
+      parameter
     })
-    this.getNewsList(newsParams, isUpdate);
+    this.getNewsList(parameter, isUpdate);
   },
 
   /**
