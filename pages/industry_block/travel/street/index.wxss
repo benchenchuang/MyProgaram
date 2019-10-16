@@ -2,5 +2,5 @@
 .group_video{
 	margin:20rpx auto;
   width: 100%;
-  height:450rpx;
+  height:425rpx;
 }
