@@ -1,6 +1,7 @@
 /* pages/industry_block/travel/hotel/index.wxss */
 .group_video{
 	margin:20rpx auto;
-  width: 100%;
-  height:425rpx;
+  	width: 100%;
+  	height:425rpx;
+  	text-indent:0;
 }
